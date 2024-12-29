@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\controllers\\dashboardapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\dashboardapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\user\\desktop\\c#\\20241212\\librarymanagementsystem\\librarymanagementsystem\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B36D27-340B-4A25-B8FD-51B64671CD62}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGgAAAAAAAAAAADwv3MAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T15:14:15.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardApiController.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\DashboardApiController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\DashboardApiController.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\DashboardApiController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\DashboardApiController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAADwv2MAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T14:43:39.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Transaction.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Transaction.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Transaction.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvwwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T14:16:13.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\User.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\User.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T15:39:11.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T14:50:28.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T16:01:45.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Edit.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T16:05:18.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T16:00:45.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T16:00:42.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Book\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-26T15:16:52.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\UserController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T15:39:30.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Services\\EmailService.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Services\\EmailService.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Services\\EmailService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T15:17:48.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Book.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Book.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAowCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T06:15:19.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RabbitMqPublisher.cs",
+              "DocumentMoniker": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Services\\RabbitMqPublisher.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Services\\RabbitMqPublisher.cs",
+              "ToolTip": "D:\\USER\\Desktop\\C#\\20241212\\LibraryManagementSystem\\LibraryManagementSystem\\Services\\RabbitMqPublisher.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Services\\RabbitMqPublisher.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T05:47:15.215Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+﻿@model LibraryManagementSystem.Models.Book
+
+@{
+    ViewData["Title"] = "修改書籍";
+}
+
+<div class="container mt-5">
+    <h1>修改書籍</h1>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group mb-3">
+            <label for="Title">標題</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="Author">作者</label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="ISBN">ISBN</label>
+            <input asp-for="ISBN" class="form-control" />
+            <span asp-validation-for="ISBN" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="PublishDate">出版日期</label>
+            <input asp-for="PublishDate" type="date" class="form-control" />
+            <span asp-validation-for="PublishDate" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="TotalCopies">總數量</label>
+            <input asp-for="TotalCopies" type="number" min="0" class="form-control" />
+            <span asp-validation-for="TotalCopies" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="AvailableCopies">可借閱數量</label>
+            <input asp-for="AvailableCopies" type="number" min="0" class="form-control" />
+            <span asp-validation-for="AvailableCopies" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="CoverImage">封面圖片</label>
+            <input type="file" class="form-control" id="CoverImage" name="CoverImage" accept="image/*" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">保存更改</button>
+    </form>
+</div>

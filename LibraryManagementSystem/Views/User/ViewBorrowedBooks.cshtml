@@ -1,0 +1,54 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Transaction>
+
+@{
+    ViewData["Title"] = "我的書庫";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+<div class="container mt-5">
+    <h1>我的書庫</h1>
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>書名</th>
+                    <th>作者</th>
+                    <th>借閱日</th>
+                    <th>到期日</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var transaction in Model)
+                {
+                    <tr>
+                        <td>@transaction.Book.Title</td>
+                        <td>@transaction.Book.Author</td>
+                        <td>@transaction.BorrowedDate.ToString("yyyy-MM-dd")</td>
+                        <td>@transaction.DueDate.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            @if (transaction.ReturnedDate == null)
+                            {
+                                <form asp-action="Return" asp-controller="Transaction" method="post" class="d-inline">
+                                    <input type="hidden" name="transactionId" value="@transaction.Id" />
+                                    <button type="submit" class="btn btn-sm btn-primary">歸還</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>您沒有借閱書籍。</p>
+    }
+</div>

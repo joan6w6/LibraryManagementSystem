@@ -1,0 +1,163 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+<div class="text-center">
+    <h1>Welcome to the Library Management System!</h1>
+    <canvas id="borrowStatsChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+    @if (ViewBag.Role == "Admin")
+    {
+        <script>
+            fetch('/api/dashboard/borrow-stats?period=daily')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Data received:", data);
+                const labels = data.map(stat => stat.period);
+                const borrowedCounts = data.map(stat => stat.borrowedCount);
+                const returnedCounts = data.map(stat => stat.returnedCount);
+
+                new Chart(document.getElementById('borrowStatsChart'), {
+                    type: 'line',
+                    data: {
+                        labels,
+                        datasets: [
+                            { label: 'Borrowed', data: borrowedCounts, borderColor: 'blue', fill: false },
+                            { label: 'Returned', data: returnedCounts, borderColor: 'green', fill: false }
+                        ]
+                    }
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching or rendering data:", error);
+            });
+    </script>
+
+    }
+
+
+
+    <div id="recommended-books" class="container text-center my-4">
+    <h3>你可能感興趣的書籍</h3>
+            <!-- 左右按鈕 -->
+        <button id="prev-button" class="btn btn-primary btn-sm position-absolute top-50 start-0 translate-middle-y"
+                style="z-index: 10; margin-left: 10px;">
+            <i class="fas fa-chevron-left"></i> Prev
+        </button>
+
+        <button id="next-button" class="btn btn-primary btn-sm position-absolute top-50 end-0 translate-middle-y"
+                style="z-index: 10; margin-right: 10px;">
+            Next <i class="fas fa-chevron-right"></i>
+        </button>
+
+    <div class="position-relative mx-auto" style="width: 300px; height: 300px; overflow: hidden;">
+                     
+        <!-- 書籍滑動容器 -->
+        <div id="book-slider" class="d-flex" style="transition: transform 0.5s;">
+            <!-- 書籍內容將通過 JavaScript 動態插入 -->
+        </div>
+
+        
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let currentIndex = 0; // 當前顯示的書籍索引
+        let books = []; // 書籍數據
+
+        // 從 API 獲取推薦書籍數據
+        fetch('/api/dashboard/recommend-books')
+            .then(response => response.json())
+            .then(data => {
+                books = data;
+                const bookSlider = document.getElementById('book-slider');
+                
+                // 動態生成書籍內容
+                books.forEach(book => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.style.width = '300px';
+                    bookDiv.style.height = '300px';
+                    bookDiv.classList.add('text-center', 'flex-shrink-0');
+                    bookDiv.innerHTML = `
+                        <img src="${book.coverImagePath}" alt="${book.title}" 
+                             class="img-fluid rounded mb-2" style="width: 100%; height: 80%; object-fit: cover;" />
+                        <h5 class="mb-1">${book.title}</h5>
+                        <p class="text-muted mb-0">Author: ${book.author}</p>
+                    `;
+                    bookSlider.appendChild(bookDiv);
+                });
+            });
+
+        // 更新 Slider 位置
+        function updateSlider() {
+            const bookSlider = document.getElementById('book-slider');
+            bookSlider.style.transform = `translateX(-${currentIndex * 300}px)`;
+        }
+
+        // 左按鈕點擊事件
+        document.getElementById('prev-button').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            }
+                else {
+                    currentIndex = books.length - 1;
+                }
+                updateSlider();
+        });
+
+        // 右按鈕點擊事件
+        document.getElementById('next-button').addEventListener('click', () => {
+            if (currentIndex < books.length - 1) {
+                currentIndex++;
+                }
+                else {
+                    currentIndex = 0;
+                }
+                updateSlider();
+            });
+    </script>
+    }
+
+
+@if (User.Identity.IsAuthenticated)
+    {
+        <div id="due-reminders">
+            <h3>即將到期的書籍</h3>
+            <ul id="due-book-list"></ul>
+        </div>
+        <script>
+            fetch('/api/dashboard/due-books')
+            .then(response => response.json())
+            .then(data => {
+            const dueBookList = document.getElementById('due-book-list');
+            data.forEach(book => {
+            const bookItem = document.createElement('li');
+            bookItem.innerHTML = `
+            <span>${book.title} - 到期日: ${new Date(book.dueDate).toLocaleDateString()}</span>
+            <button onclick="returnBook(${book.id})">快速歸還</button>
+            `;
+            dueBookList.appendChild(bookItem);
+            });
+            });
+
+            function returnBook(transactionId) {
+            // 提交歸還請求
+            fetch(`/api/transactions/return/${transactionId}`, { method: 'POST' })
+            .then(response => response.json())
+            .then(() => alert('歸還成功'));
+            }
+        </script>
+    }
+
+
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

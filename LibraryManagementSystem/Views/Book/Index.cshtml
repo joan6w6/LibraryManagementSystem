@@ -1,0 +1,185 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Book>
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "書籍";
+}
+
+<div class="container mt-5">
+    <form method="get" asp-action="Index" asp-controller="Book" class="mb-3">
+        <div class="form-group row">
+            <div class="col-md-10">
+                <input type="text" name="searchQuery" class="form-control" placeholder="輸入書名、作者或 ISBN 查找書籍">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </div>
+        </div>
+    </form>
+
+    @*  <!-- 用戶 ID 和書籍列表 -->
+    @if (!string.IsNullOrEmpty(ViewBag.UserId))
+    {
+    <div class="alert alert-info">
+    <strong>用戶 ID:</strong> @ViewBag.UserId
+    </div>
+    } *@
+
+    <h1>書籍列表</h1>
+    
+    <!-- 切換按鈕 -->
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="viewToggle" />
+        <label class="form-check-label" for="viewToggle">切換視圖</label>
+    </div>
+
+
+    @if (Model != null && Model.Any())
+    {
+        <div id="listView" class="view-mode">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th style="width: 120px;">標題</th>
+                        <th style="width: 120px;">作者</th>
+                        <th style="width: 120px;">ISBN</th>
+                        <th style="width: 120px;">總數量</th>
+                        <th style="width: 120px;">可借閱數量</th>
+                        <th style="width: 200px;">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var book in Model)
+                    {
+                        <tr>
+                            <td>@book.Title</td>
+                            <td>@book.Author</td>
+                            <td>@book.ISBN</td>
+                            <td>@book.TotalCopies</td>
+                            <td>@book.AvailableCopies</td>
+                            <td>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <!-- 修改按鈕，藍色背景 -->
+                                    <a asp-action="Edit" asp-route-id="@book.Id" class="btn btn-primary btn-sm">修改</a>
+
+                                    <!-- 刪除按鈕，紅色背景 -->
+                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="@book.Id" data-title="@book.Title">
+                                        刪除
+                                    </button>
+                                }
+                                <!-- 借書按鈕，綠色背景 -->
+                                @if (book.AvailableCopies > 0)
+                                {
+                                    <form asp-action="Borrow" asp-controller="Transaction" method="post" style="display:inline;">
+                                        <input type="hidden" name="bookId" value="@book.Id" />
+                                        <button type="submit" class="btn btn-success btn-sm">借閱</button> <!-- 綠色背景按鈕 -->
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="text-danger">已借完</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div id="gridView" class="view-mode d-none">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                @foreach(var book in Model)
+                {
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100">
+                            <img src="@book.CoverImagePath" class="card-img-top" alt="@book.Title" style="height: 200px; object-fit: cover;" />
+                        <div class="card-body">
+                                <h5 class="card-title">@book.Title</h5>
+                                <p class="card-text">作者: @book.Author</p>
+                                <p class="card-text">ISBN: @book.ISBN</p>
+                                <p class="card-text">可借閱數量: @book.AvailableCopies</p>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Edit" asp-route-id="@book.Id" class="btn btn-primary btn-sm">修改</a>
+                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="@book.Id" data-title="@book.Title">
+                                        刪除
+                                    </button>
+                                }
+                                @if (book.AvailableCopies > 0)
+                                {
+                                    <form asp-action="Borrow" asp-controller="Transaction" method="post" style="display:inline;">
+                                        <input type="hidden" name="bookId" value="@book.Id" />
+                                        <button type="submit" class="btn btn-success btn-sm">借閱</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <span class="text-danger">已借完</span>
+                                }
+                        </div>
+                    </div>   
+                </div>   
+                }
+            </div>
+        </div>
+    }
+
+
+    <!-- 如果沒有找到書籍顯示提示 -->
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning mt-3">
+            找不到匹配的書籍，請嘗試其他關鍵字。
+        </div>
+    }
+</div>
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Create" class="btn btn-success">新增書籍</a>
+}
+</div>
+
+<!-- 刪除確認模態框 -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">確認刪除</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                您確定要刪除書籍 <span id="deleteBookTitle" class="fw-bold"></span> 嗎？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <form id="deleteForm" method="post" asp-action="DeleteConfirmed">
+                    <input type="hidden" name="id" id="deleteBookId" />
+                    <button type="submit" class="btn btn-danger">確定刪除</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const toggleSwitch = document.getElementById('viewToggle');
+        const listView = document.getElementById('listView');
+        const gridView = document.getElementById('gridView');
+
+        toggleSwitch.addEventListener('change', () => {
+            if (toggleSwitch.checked) {
+                listView.classList.add('d-none');
+                gridView.classList.remove('d-none');
+            } else {
+                listView.classList.remove('d-none');
+                gridView.classList.add('d-none');
+            }
+        });
+    </script>
+}
+
+
+
+
